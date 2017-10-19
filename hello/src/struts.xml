@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+    <package name="hello" extends="struts-default">
+        
+        <action name="Book-research" class="hello.library1">
+            <result name="success">/ind.jsp</result>
+            <result name="error">/register.jsp</result>
+        </action>
+        <action name="bookinf" class="hello.information">
+            <result name="success">/inf.jsp</result>
+        </action>
+        <action name="bookde" class="hello.delete">
+        	<result name="success">/desuccess.jsp</result>
+        </action>
+    </package>
+</struts>
